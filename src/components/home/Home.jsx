@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Logo from "../../assets/img/palm-logo/image-1@2x.png";
 
-import Header from "./Header";
-import About from "./About";
-import Clients from "./Clients";
+import Header from "./Header.jsx";
+import About from "./About.jsx";
+import Clients from "./Clients.jsx";
 
 export default class Home extends Component {
   render() {
@@ -198,7 +198,9 @@ export default class Home extends Component {
             </div>
 
             <div className="u-center-text u-margin-bottom-big">
-              <h2 className="heading-secondary">We make people genuinely happy</h2>
+              <h2 className="heading-secondary">
+                We make people genuinely happy
+              </h2>
             </div>
 
             <div className="row-grid">
@@ -235,7 +237,9 @@ export default class Home extends Component {
                     alt="Person on a tour"
                     className="story__img"
                   />
-                  <figcaption className="story__caption">Jack Wilson</figcaption>
+                  <figcaption className="story__caption">
+                    Jack Wilson
+                  </figcaption>
                 </figure>
                 <div className="story__text">
                   <h3 className="heading-tertiary u-margin-bottom-small">
