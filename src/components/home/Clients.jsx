@@ -17,20 +17,14 @@ const Clients = () => {
               }}
             >
               <Container
-                className="justify-content-md-center"
-                style={{ textAlign: "center", marginBottom: "5rem" }}
+                className={["u-margin-bottom-medium", "u-center-text"]}
               >
                 <Row>
-                  <Col md={4} sm={6} xs={6} style={{ marginBottom: "5rem" }}>
-                    <img src={Logo} alt="Logo" className="header__logo" />
-                  </Col>
                   <Col
                     md={4}
                     sm={6}
                     xs={6}
-                    style={{
-                      marginBottom: "5rem"
-                    }}
+                    className={["u-margin-bottom-medium", "u-center-text"]}
                   >
                     <img src={Logo} alt="Logo" className="header__logo" />
                   </Col>
@@ -38,9 +32,7 @@ const Clients = () => {
                     md={4}
                     sm={6}
                     xs={6}
-                    style={{
-                      marginBottom: "5rem"
-                    }}
+                    className={["u-margin-bottom-medium", "u-center-text"]}
                   >
                     <img src={Logo} alt="Logo" className="header__logo" />
                   </Col>
@@ -48,9 +40,7 @@ const Clients = () => {
                     md={4}
                     sm={6}
                     xs={6}
-                    style={{
-                      marginBottom: "5rem"
-                    }}
+                    className={["u-margin-bottom-medium", "u-center-text"]}
                   >
                     <img src={Logo} alt="Logo" className="header__logo" />
                   </Col>
@@ -58,9 +48,7 @@ const Clients = () => {
                     md={4}
                     sm={6}
                     xs={6}
-                    style={{
-                      marginBottom: "5rem"
-                    }}
+                    className={["u-margin-bottom-medium", "u-center-text"]}
                   >
                     <img src={Logo} alt="Logo" className="header__logo" />
                   </Col>
@@ -68,9 +56,31 @@ const Clients = () => {
                     md={4}
                     sm={6}
                     xs={6}
-                    style={{
-                      marginBottom: "5 rem"
-                    }}
+                    className={["u-margin-bottom-medium", "u-center-text"]}
+                  >
+                    <img src={Logo} alt="Logo" className="header__logo" />
+                  </Col>
+                  <Col
+                    md={4}
+                    sm={6}
+                    xs={6}
+                    className={["u-margin-bottom-medium", "u-center-text"]}
+                  >
+                    <img src={Logo} alt="Logo" className="header__logo" />
+                  </Col>
+                  <Col
+                    md={4}
+                    sm={6}
+                    xs={6}
+                    className={["u-margin-bottom-medium", "u-center-text"]}
+                  >
+                    <img src={Logo} alt="Logo" className="header__logo" />
+                  </Col>
+                  <Col
+                    md={4}
+                    sm={6}
+                    xs={6}
+                    className={["u-margin-bottom-medium", "u-center-text"]}
                   >
                     <img src={Logo} alt="Logo" className="header__logo" />
                   </Col>

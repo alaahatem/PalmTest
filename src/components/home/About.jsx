@@ -21,13 +21,13 @@ export default class About extends Component {
                 <source src={Video} type="video/mp4" />
                 <source src={Video} type="video/webm" />
                 Your browser is not supported!
-              </video>{" "}
-            </div>{" "}
-            <div className="enable-sound"> Enable Sound </div>{" "}
-          </div>{" "}
-        </div>{" "}
+              </video>
+            </div>
+            <div className="enable-sound"> Enable Sound </div>
+          </div>
+        </div>
         <div className="u-padding u-margin-bottom-small">
-          <h2 className="heading-secondary"> Our Story </h2>{" "}
+          <h2 className="heading-secondary"> Our Story </h2>
         </div>
         <div className="row-grid">
           <div className="u-margin-bottom-small">
@@ -37,52 +37,52 @@ export default class About extends Component {
               specialized turn - key contractor in infrastructure and
               specialized in delivering high complex Construction Projects in
               different Sectors such as Industrial, Military, Residential,
-              Administration / Commercial Buildings and Medical.{" "}
-            </p>{" "}
-          </div>{" "}
+              Administration / Commercial Buildings and Medical.
+            </p>
+          </div>
           <div className="col-1-of-2 u-padding">
-            <button className="btn-global"> KNOW MORE </button>{" "}
-          </div>{" "}
+            <button className="btn-global"> KNOW MORE </button>
+          </div>
           <div className="col-1-of-2">
             <div className="services">
-              <h3> Our Services & #9473;&# 9473; & #9473; </h3>
+              <h3> Our Services &#9473;&#9473;&#9473; </h3>
               <div className="collapsible-services">
                 <div className="accordion-div">
                   <div className="accordion">
                     <i>
                       <img className="img-icon" src={Crane} alt="" />
-                    </i>{" "}
-                    <div className="service-name"> Construction </div>{" "}
-                  </div>{" "}
+                    </i>
+                    <div className="service-name"> Construction </div>
+                  </div>
                   <div className="panel">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua.Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.{" "}
-                    </p>{" "}
-                  </div>{" "}
-                </div>{" "}
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
                 <div className="accordion-div">
                   <button className="accordion">
                     <i>
                       <img className="img-icon" src={Project} alt="" />
-                    </i>{" "}
-                    <div className="service-name"> Project Management </div>{" "}
-                  </button>{" "}
+                    </i>
+                    <div className="service-name"> Project Management </div>
+                  </button>
                   <div className="panel">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua.Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.{" "}
-                    </p>{" "}
-                  </div>{" "}
-                </div>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     );
   }

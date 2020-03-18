@@ -16,8 +16,8 @@ const Header = () => {
         />
         <label htmlFor="navi-toggle" className="navigation__button">
           <span className="navigation__icon"> & nbsp; </span>{" "}
-        </label>
-        <div className="navigation__background"> & nbsp; </div>
+        </label>{" "}
+        <div className="navigation__background"> & nbsp; </div>{" "}
         <nav className="navigation__nav">
           <ul className="navigation__list">
             <li className="navigation__item">
@@ -51,7 +51,7 @@ const Header = () => {
       <header className="header">
         <div className="header__logo-box">
           <img src={Logo} alt="Logo" className="header__logo" />
-        </div>
+        </div>{" "}
         <div className="header__text-box">
           <h1 className="heading-primary">
             <span className="heading-primary--sub">
@@ -59,7 +59,6 @@ const Header = () => {
             </span>{" "}
             <span className="heading-primary--main"> Redefines what </span>{" "}
             <span className="heading-primary--main">
-              {" "}
               you have come to expect{" "}
             </span>{" "}
             <span className="heading-primary--main">
