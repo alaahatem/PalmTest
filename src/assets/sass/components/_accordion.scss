@@ -1,0 +1,63 @@
+.accordion-div {
+    background-color: transparent;
+    border-top: 1px solid $color-white;
+    padding: 1rem;
+
+    &:last-child {
+        border-bottom: 1px solid $color-white;
+    }
+}
+
+.accordion {
+    background-color: transparent;
+    border-top: 1px solid $color-white;
+    color: $color-white;
+    cursor: pointer;
+    padding: 0.2rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .img-icon {
+        margin-top: 10px;
+        width: 60px;
+        margin-right: 1.8rem;
+    }
+
+    .service-name {
+        // padding-top: 1.8rem;
+        flex: 1
+    }
+}
+
+.active,
+.accordion:hover {}
+
+.accordion:after {
+    content: '\002B';
+    color: $color-white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 4rem;
+    background-color: transparent;
+    color: $color-white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}

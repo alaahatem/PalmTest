@@ -1,0 +1,41 @@
+.header {
+    background-image: url(../../img/sketch/sketch@2x.jpg);
+    background-size: 80% 700px;
+    height: 700px;
+    background-repeat: repeat;
+    background-position: top right;
+    position: relative;
+
+    // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    //     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    //     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    //     height: 95vh;
+    // }
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+        background-image: url(../../img/sketch/sketch@2x.jpg);
+    }
+
+    @include respond(phone) {
+        background-size: 100vw 100vh;
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 10.5rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 4rem;
+        // left: 5%;
+    }
+}
