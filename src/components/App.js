@@ -9,11 +9,11 @@ const App = () => {
       <Router history={history}>
         <div>
           <Switch>
-            <Route path="/" exact component={Home} />{" "}
-          </Switch>{" "}
-        </div>{" "}
+            <Route path="/" exact component={Home} />
+          </Switch>
+        </div>
         <Footer />
-      </Router>{" "}
+      </Router>
     </div>
   );
 };
