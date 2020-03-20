@@ -1,0 +1,87 @@
+.description {
+  height: 1000px;
+  overflow: hidden;
+  background-image: url("../../img/group-12.png");
+}
+.desc-container {
+  width: auto;
+  height: auto;
+  margin-top: 225px;
+  margin-right: 165px;
+  margin-left: 225px;
+  margin-bottom: 100px;
+  @media screen and (max-width: 991px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.first-textbox {
+  height: auto;
+  width: auto;
+  top: 0;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+.second-textbox {
+  height: auto;
+  width: auto;
+  margin-top: 75px;
+  margin-left: 20%;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  @media screen and (max-width: 991px) {
+    height: 100px;
+    width: auto;
+    margin-left: 0;
+  }
+}
+.third-textbox {
+  height: auto;
+  width: auto;
+  margin-top: 75px;
+  margin-left: 10%;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  @media screen and (max-width: 991px) {
+    height: 100px;
+    width: auto;
+    margin-left: 0;
+  }
+}
+.fourth-textbox {
+  height: auto;
+  width: auto;
+
+  margin-top: 75px;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+.text-style-1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+.text-style-2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+}

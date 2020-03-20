@@ -1,18 +1,48 @@
 @mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
-
+@mixin SetDescriptionMargins(
+  $TopMargin,
+  $RightMargin,
+  $BottomMargin,
+  $LeftMargin
+) {
+  width: 900px;
+  height: auto;
+  margin: $TopMargin $RightMargin $BottomMargin $LeftMargin;
+}
 @mixin absCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+// Font Mixins
+@mixin serif-font {
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@mixin script-font {
+  font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@mixin body-font {
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@mixin heading-font {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
 // MEDIA QUERY MANAGER
 /*
@@ -33,61 +63,54 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint) {
-    @if $breakpoint==phone {
-        @media only screen and (max-width: 37.5em) {
-            @content
-        }
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
 
-        ; //600px
-    }
+  @if $breakpoint==tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
 
-    @if $breakpoint==tab-port {
-        @media only screen and (max-width: 56.25em) {
-            @content
-        }
+  @if $breakpoint==tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
 
-        ; //900px
-    }
-
-    @if $breakpoint==tab-land {
-        @media only screen and (max-width: 75em) {
-            @content
-        }
-
-        ; //1200px
-    }
-
-    @if $breakpoint==big-desktop {
-        @media only screen and (min-width: 112.5em) {
-            @content
-        }
-
-        ; //1800
-    }
+  @if $breakpoint==big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }
 }
 
 @mixin circleButton($size) {
-    line-height: $size;
-    text-align: center;
-    width: $size;
-    height: $size;
-    border: 2px dashed $color-white;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 3.5rem;
-    left: 3.5rem;
-    color: $color-white;
-    cursor: pointer;
+  line-height: $size;
+  text-align: center;
+  width: $size;
+  height: $size;
+  border: 2px dashed $color-white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3.5rem;
+  left: 3.5rem;
+  color: $color-white;
+  cursor: pointer;
 
-    &:hover {
-        border-style: solid;
-    }
+  &:hover {
+    border-style: solid;
+  }
 }
 
 @mixin overlay-mesh-grid($color) {
-    height: 100%;
-    width: 100%;
-    background-image: url('../../img//mesh-grid/mesh-grid.png'), linear-gradient(to right, $color, $color);
-    background-size: 100%;
-    background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../img//mesh-grid/mesh-grid.png"),
+    linear-gradient(to right, $color, $color);
+  background-size: 100%;
+  background-repeat: repeat;
 }

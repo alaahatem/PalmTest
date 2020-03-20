@@ -1,76 +1,190 @@
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    /*font-size: 16px;*/
-    line-height: 1.7;
-    color: $color-grey-dark;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: $color-grey-dark;
 }
 
 .heading-primary {
-    color: $color-marine;
-    backface-visibility: hidden;
-    margin-bottom: 6rem;
+  color: $color-marine;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
 
-    &--main {
-        display: block;
-        font-size: 3rem;
-        font-weight: 400;
-        line-height: 1.2;
-        animation-name: moveInLeft;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
+  &--main {
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 
-        @include respond(phone) {
-            font-family: 5rem;
-        }
+    @include respond(phone) {
+      font-family: 5rem;
+    }
 
-        /*
+    /*
         animation-delay: 3s;
         animation-iteration-count: 3;
         */
-    }
+  }
 
-    &--sub {
-        color: $color-ugly-blue;
-        display: block;
-        font-size: 1.2rem;
-        font-weight: 500;
-        animation: moveInRight 1s ease-out;
+  &--sub {
+    color: $color-ugly-blue;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    animation: moveInRight 1s ease-out;
 
-        @include respond(phone) {}
+    @include respond(phone) {
     }
+  }
 }
 
 .heading-secondary {
-    font-size: 7.5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    display: inline-block;
-    color: white;
-    letter-spacing: .2rem;
-    transition: all .2s;
+  font-size: 7.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
 
-    @include respond(tab-port) {
-        font-size: 3rem;
-    }
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
 
-    @include respond(phone) {
-        font-size: 2.5rem;
-    }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }
 
 .heading-tertiary {
-    font-size: $default-font-size;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .paragraph {
-    color: $color-white;
-    font-size: $default-font-size;
-    font-weight: 300;
+  color: $color-white;
+  font-size: $default-font-size;
+  font-weight: 300;
 
-    &:not(:last-child) {
-        margin-bottom: 3rem;
-    }
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+.OUR-STORY {
+  max-width: 100%;
+  width: 539px;
+  height: 126px;
+  font-family: sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #093148;
+  display: inline-block;
+  justify-content: start;
+}
+.About_Description {
+  overflow: hidden;
+  margin: auto;
+  max-width: 100%;
+  font-family: AvenirNext;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+
+  color: #303030;
+}
+
+.Founded-in-2012-Pal {
+  text-align: left;
+  position: relative;
+  max-width: 100%;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  @include SetDescriptionMargins(4.6rem, 19.6875rem, 4.6rem, 14.0625rem);
+}
+.Our-strength-is-deli {
+  text-align: left;
+  position: relative;
+  max-width: 100%;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  @include SetDescriptionMargins(4.6rem, 10.3125rem, 4.6rem, 23.4375rem);
+}
+.At-Palm-Construction {
+  text-align: left;
+  position: relative;
+  max-width: 100%;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  @include SetDescriptionMargins(4.6rem, 16.25rem, 4.6rem, 17.5rem);
+}
+.Correspondingly-due {
+  text-align: left;
+  position: relative;
+  max-width: 100%;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  @include SetDescriptionMargins(4.6rem, 19.375rem, 4.6rem, 14.375rem);
+}
+
+@media only screen and (max-width: 47.5rem) {
+  .Founded-in-2012-Pal {
+    margin: auto;
+  }
+  .At-Palm-Construction {
+    margin: auto;
+  }
+  .Correspondingly-due {
+    margin: auto;
+  }
+  .Our-strength-is-deli {
+    margin: auto;
+  }
+}
+
+.text-style-1 {
+  font-weight: 600;
+  max-width: 40.25rem;
+}
+
+.text-style-2 {
+  font-weight: 500;
+  max-width: 56.25rem;
 }

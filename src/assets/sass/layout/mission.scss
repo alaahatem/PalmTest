@@ -1,0 +1,6 @@
+.sectionMission {
+  position: relative;
+  background-color: $color-marine;
+  padding: 5rem 0 15rem 0;
+  @include overlay-mesh-grid(#0c406a);
+}
